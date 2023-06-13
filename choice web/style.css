@@ -1,0 +1,104 @@
+#ex {
+  text-align: center;
+  font-family: 'Petit Formal Script';
+  color: black;
+
+}
+
+.hope{
+  color: rgb(81, 145, 156);
+  text-decoration: none;
+  font-family: 'Petit Formal Script';
+}
+:hover.hope{
+  color: black;
+  text-decoration: none;
+  font-family: 'Petit Formal Script';
+}
+
+.heading{
+  text-align: center;
+  font-family: 'Petit Formal Script';
+}
+
+.btn{
+  color: rgb(0, 0, 0);
+  border-color: aqua;
+  fill: rgb(59, 201, 201);
+
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("images/wreath.jpg");
+
+  /* Set a specific height */
+  min-height: 400px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+.product img {
+	width: 100%;
+	transition: 0.4s all ease-in-out;
+}
+  
+.product:hover img {
+	product-image: url(images/firework.jpeg);
+}
+
+.overlay {
+	position: absolute;
+	
+	opacity: 0;
+	transition: .5s ease;
+	height: 100%;
+  }
+  
+  .card:hover .overlay {
+	opacity: 1;
+  }
+
